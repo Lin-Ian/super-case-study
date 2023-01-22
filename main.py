@@ -23,7 +23,7 @@ df.drop(['To_From'], axis=1, inplace=True)
 
 # Requirement #3
 # Assumption: numbers are not removed
-# Remove punctuation and any beginning
+# Remove punctuation (keep alphanumeric and whitespace characters)
 df['Airline Code'] = df['Airline Code'].str.replace(r'[^\w\s]+', '', regex=True)
 # Remove amy beginning and trailing whitespace
 df['Airline Code'] = df['Airline Code'].str.strip()
