@@ -30,3 +30,13 @@ df['Airline Code'] = df['Airline Code'].str.strip()
 
 # Output transformed table
 print(df)
+
+# Transformed table
+"""
+     Airline Code    DelayTimes  FlightCodes        To       From
+0      Air Canada      [21, 40]        20015  WATERLOO    NEWYORK
+1   Air France 12            []        20025  MONTREAL    TORONTO
+2  Porter Airways  [60, 22, 87]        20035   CALGARY     OTTAWA
+3   12 Air France      [78, 66]        20045    OTTAWA  VANCOUVER
+4       Lufthansa      [12, 33]        20055    LONDON   MONTREAL
+"""
